@@ -39,3 +39,21 @@ body {
 ::selection {
   background: rgba(37, 99, 235, 0.18);
 }
+
+/* Fix date input text visibility in light and dark mode */
+input[type="date"]::-webkit-datetime-edit {
+  color: inherit;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  color: inherit;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

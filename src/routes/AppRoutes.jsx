@@ -7,7 +7,9 @@ import MainLayout from '../layouts/MainLayout';
 import Landing from '../pages/Landing';
 import Dashboard from '../pages/Dashboard';
 import Projects from '../pages/Projects';
+import ProjectDetails from '../pages/ProjectDetails';
 import Tasks from '../pages/Tasks';
+import TaskDetails from '../pages/TaskDetails';
 import Calendar from '../pages/Calendar';
 import Analytics from '../pages/Analytics';
 import Settings from '../pages/Settings';
@@ -23,7 +25,9 @@ export default function AppRoutes() {
       <Route element={<MainLayout />}>
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="projects/:projectId" element={<ProjectDetails />} />
         <Route path="tasks" element={<Tasks />} />
+        <Route path="tasks/:taskId" element={<TaskDetails />} />
         <Route path="calendar" element={<Calendar />} />
         <Route path="analytics" element={<Analytics />} />
         <Route path="settings" element={<Settings />} />
